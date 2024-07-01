@@ -14,7 +14,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Create a client instance
-client = commands.Bot(command_prefix='!')
+client = commands.Bot(command_prefix='!', intents=intents)
 @client.event
 async def on_ready():
     print("Connected to Discord!")
