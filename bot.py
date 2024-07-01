@@ -24,6 +24,10 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send("Hello, I am KetBot!")
 
+@client.command()
+async def bigLL26l(ctx):
+    await ctx.send("“[Callsign], cleared to [Dest] via Biggin, after departure runway 26L/R climb straight ahead to I-WW 2.3 DME, then turn right heading 075, climb to altitude 4000 ft, speed 220 knots or less, squawk [Code].”")
+
 
 
 # Run the bot
