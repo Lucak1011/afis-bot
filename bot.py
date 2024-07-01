@@ -1,7 +1,6 @@
 # bot.py
 import os
 import discord
-import Creds
 from dotenv import load_dotenv
 from discord.ext import commands
 #intents
@@ -12,7 +11,7 @@ intents.guilds = True
 
 # Load the .env file with the token
 load_dotenv()
-TOKEN = Creds.BOT_TOKEN
+TOKEN = os.getenv('BOT_TOKEN')
 
 # Create a client instance
 client = commands.Bot(command_prefix='!', intents=intents)
