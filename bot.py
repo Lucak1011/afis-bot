@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv # type: ignore
 from discord.ext import commands
 #intents
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.messages = True
 intents.guilds = True
 
