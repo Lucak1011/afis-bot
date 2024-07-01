@@ -12,9 +12,6 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix='!')
 
 # Define the event
-@client.event
-async def on_ready():
-    print(f'{client.user} has connected to Discord!')
 
 @client.command()
 async def hello(ctx):
