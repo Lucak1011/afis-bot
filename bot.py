@@ -15,13 +15,14 @@ TOKEN = os.getenv('BOT_TOKEN')
 
 # Create a client instance
 client = commands.Bot(command_prefix='!', intents=intents)
+
 @client.event
 async def on_ready():
     print("Connected to Discord!")
 
 @client.command()
 async def hello(ctx):
-    await ctx.send('Hello, I am KetBot!')
+    await ctx.send("Hello, I am KetBot!")
 
 
 
