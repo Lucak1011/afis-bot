@@ -16,4 +16,4 @@ async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
 # Run the bot
-client.run(TTOKEN)
+client.run(TOKEN)
