@@ -3,6 +3,11 @@ import os
 import discord
 from dotenv import load_dotenv
 from discord.ext import commands
+#intents
+intents = discord.Intents.default()
+intents.messages = True
+intents.guilds = True
+
 
 # Load the .env file with the token
 load_dotenv()
