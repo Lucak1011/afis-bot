@@ -4,3 +4,4 @@
 creds.py
 Config/config.json
 Config/config.json
+node_modules/*
