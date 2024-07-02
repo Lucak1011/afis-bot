@@ -2,3 +2,5 @@
 .env
 .env
 creds.py
+Config/config.json
+Config/config.json
