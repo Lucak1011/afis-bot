@@ -11,7 +11,7 @@ module.exports = {
                 .setRequired(true)),
     async execute(interaction) {
         const icaoCode = interaction.options.getString('icao')
-        await interaction.reply(`https://chartfox.org/${icaoCode}`)
+        await interaction.reply({ content: `https://chartfox.org/${icaoCode}`, ephemeral: true })
     },
 
 };
