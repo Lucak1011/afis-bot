@@ -9,11 +9,11 @@ module.exports = {
     .setName('metar')
     .setDescription('Pulls a METAR when an ICAO code is entered')
     .addStringOption(option =>
-        option.setName('ICAO')
+        option.setName('icao')
         .setDescription('Enter an ICAO code')
         .setRequired(true)),
     async execute(interaction){
-        const icao = interaction.options.getString('ICAO').toUpperCase();
+        const icao = interaction.options.getString('icao').toUpperCase();
 
         let options = {
             'method': 'GET',
